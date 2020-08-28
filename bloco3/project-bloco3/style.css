@@ -1,0 +1,115 @@
+* {
+  padding: 0.1px;
+  margin: 0.1px;
+}
+
+#cabecalho {
+  text-align: center;
+  background-color: hsl(165 , 93% , 73%);
+  position: fixed;
+  top: 0;
+  left: 0.2px;
+  right: 0.2px;
+  height: 60px;
+  margin-bottom: 60px;
+}
+
+body {
+  background-color: rgb(253 , 251 , 251);
+  font-family: Impact, Haettenschweiler, sans-serif;
+  font-size: 14px;
+}
+
+#titulo {
+  color: rgb(253 , 251 , 251);
+  position: relative;
+}
+
+.minha_foto {
+  margin: 35px;
+  padding: 5px;
+  border: 2px solid hsl(194 , 90% , 81%);
+}
+
+.lado-esquerdo {
+  margin-top: 70px;
+  float: left;
+  width: 20%;
+  margin-bottom: 25px;
+  background-color: hsl(148 , 76% , 92%);
+}
+
+.lado-direito {
+  margin-top: 70px;
+  float: right;
+  width: 20%;
+  margin-bottom: 25px;
+  background-color: hsl(148 , 76% , 92%);
+}
+
+.aprendidas {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+.a_aprendi {
+  text-align: center;
+  margin-left: 30px;
+  width: 200px;
+}
+
+.sidebar {
+  margin-top: 80px;
+  margin-right: 20px;
+  float: right;
+  width: 10%;
+}
+
+.sidebar table {
+  margin-top: 30px;
+}
+
+h4 {
+  margin: 5px;
+}
+
+h3 {
+  margin-top: 70px;
+  margin-bottom: 25px;
+}
+
+.aprendizado {
+  margin: 30px;
+}
+
+.content {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  line-height: 25px;
+}
+
+.content h2 {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: square;
+  margin-bottom: 15px;
+}
+
+.tabela {
+  text-align: center;
+}
+
+#rodape {
+  clear: both;
+  background-color: hsl(165 , 93% , 73%);
+  color: rgb(253 , 251 , 251);
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+}
