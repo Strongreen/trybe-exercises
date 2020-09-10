@@ -77,29 +77,30 @@
         Além disso, sempre que um dos eventos for realizado deve-se logar no
         console qual dos eventos acabou de ocorrer.
       </p>
-           <img class='trocaImagem' src="https://upload.wikimedia.org/wikipedia/commons/0/09/Giraffe_2019-07-28.jpg" alt="">
-     <script>
+        <img id='trocaImagem' width="200px" src="https://upload.wikimedia.org/wikipedia/commons/0/09/Giraffe_2019-07-28.jpg" alt="">
+    
+    <script>
 
-        let trocaImagem = document.getElementsByClassName('trocaImagem');
+        let trocaImagem = document.getElementById('trocaImagem');
 
 
         function trocarImagemOver(){
-           let img = new Image();
-           
-           img.src = "https://gree.com.br/wp-content/uploads/2019/07/photo-1470081766425-a75c92adff0b-600x900.jpg";
+                 
+            trocaImagem.src = "https://gree.com.br/wp-content/uploads/2019/07/photo-1470081766425-a75c92adff0b-600x900.jpg";
         
-            console.log(trocaImagem);
+            console.log('entrou na imagem');
         }
         function trocarImagemLeave(){
 
-
-          trocaImagem[0].src = "https://upload.wikimedia.org/wikipedia/commons/0/09/Giraffe_2019-07-28.jpg";
+            trocaImagem.src = "https://upload.wikimedia.org/wikipedia/commons/0/09/Giraffe_2019-07-28.jpg";
         
-            console.log(trocaImagem);
+            console.log('saiu da imagem');
         }
-
-        trocaImagem[0].addEventListener('mouseover',trocarImagemOver);
-        trocaImagem[0].addEventListener('mouseleave',trocarImagemLeave);
+        
+        trocaImagem.addEventListener('mouseover',trocarImagemOver);
+        
+        trocaImagem.addEventListener('mouseleave',trocarImagemLeave);
+      
       </script>
   
    
