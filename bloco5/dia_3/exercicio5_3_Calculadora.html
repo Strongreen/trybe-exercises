@@ -37,8 +37,73 @@
   <div id="solution"></div>
 
   <script>
+    // Quadrado
 
+    let campQuadNumber = document.getElementById('square-input');
+    let btnQuadNumber = document.getElementById('square-button');
+
+    // Metade
+
+    let campHalfumber = document.getElementById('half-input');
+    let btnHalfNumber = document.getElementById('half-button');
     
+    // Porcentagem 
+
+    let CampPercent1umber = document.getElementById('percent1-input');
+    let CampPercent2umber = document.getElementById('percent2-input');
+    let btnpercentNumber = document.getElementById('percent-button');
+
+    // Area
+
+    let campAreaumber = document.getElementById('area-input');
+    let btnAreaNumber = document.getElementById('area-button');
+ 
+    // Solução final
+
+    let solutionFinal = document.getElementById('solution');
+
+    // Calcula Quad
+
+    function calcQuad(){
+
+      solutionFinal.innerHTML = Math.pow(parseInt(campQuadNumber.value),2); 
+
+    }
+
+    btnQuadNumber.addEventListener('click', calcQuad);
+
+    // calcula Half
+
+    function calcHalf(){
+
+      solutionFinal.innerHTML = parseInt(campHalfumber.value) / 2; 
+
+    }
+
+    btnHalfNumber.addEventListener('click', calcHalf);
+
+    // Calcula Percent
+
+
+    function calcPercent(){
+
+      solutionFinal.innerHTML = parseInt(CampPercent1umber.value) / parseInt(CampPercent2umber.value) ; 
+
+    }
+
+    btnpercentNumber.addEventListener('click', calcPercent);
+
+
+    // Calcula Area
+
+
+    function calcArea(){
+
+      solutionFinal.innerHTML = Math.PI * (Math.pow(parseInt(campAreaumber.value), 2)); 
+
+    }
+
+    btnAreaNumber.addEventListener('click', calcArea);
 
   </script>
 </body>
