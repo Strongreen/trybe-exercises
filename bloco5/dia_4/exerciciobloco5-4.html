@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo"> Meu site é este </h1>
+    </div>
+ 
+    <div id="interacaoCorLetra">
+        <label> Trocar a cor das letras </label>
+        <input id="campoCor" type="text">
+        <button id="btn-alterarCor"> Alterar</button>
+    </div>
+
+    <div id="interacaoFundoTela">
+        <label> Trocar a cor da Tela </label>
+        <input id="campoTela" type="text">
+        <button id="btn-alterarTela"> Alterar</button>
+    </div>
+
+    <div id="interacaoTamanhoFonte">
+        <label> Trocar o tamanho das letras </label>
+        <input id="campoTamanho" type="text">
+        <button id="btn-alterarTamanho"> Alterar</button>
+    </div>
+
+    <div id="interacaoTipoFonte">
+        <label> Trocar a fonte das letras </label>
+        <input id="campoTipo" type="text">
+        <button id="btn-alterarTipo"> Alterar</button>
+    </div>
+
+    <div id="interacaoEspacamento">
+        <label> Trocar o espaçamento das letras </label>
+        <input id="campoEspaco" type="text">
+        <button id="btn-alterarEspaco"> Alterar</button>
+    </div>
+
+    <div class="lorens">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, odio distinctio cupiditate numquam hic quae recusandae delectus laudantium qui aut veritatis harum eum iure voluptatum dolores tempore velit pariatur magnam!
+        </p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus obcaecati, vel, nesciunt natus, dolores odit voluptas dolorum cum ut sint rem reprehenderit magnam excepturi repellendus ab totam tenetur nulla ipsam.
+        </p>
+    </div>
+        
+    <script>
+      
+            let  lorens =  document.querySelector('.lorens')
+
+
+            let btnAlterarCor = document.getElementById('btn-alterarCor');
+            let campoCor = document.getElementById('campoCor');
+
+            let btnAlterarTela = document.getElementById('btn-alterarTela');
+            let campoTela = document.getElementById('campoTela');
+
+            let btnAlterarTamanho = document.getElementById('btn-alterarTamanho');
+            let campoTamanho = document.getElementById('campoTamanho');
+
+            let btnAlterarTipo = document.getElementById('btn-alterarTipo');
+            let campoTipo = document.getElementById('campoTipo');
+
+            let btnAlterarEspaco = document.getElementById('btn-alterarEspaco');
+            let campoEspaco = document.getElementById('campoEspaco');
+
+
+            btnAlterarEspaco.addEventListener('click',function(){
+            lorens.style.letterSpacing = campoEspaco.value + 'px'; 
+            });
+
+            btnAlterarTipo.addEventListener('click',function(){
+            lorens.style.fontFamily = campoTipo.value ; 
+            });
+            
+            btnAlterarTamanho.addEventListener('click',function(){
+            lorens.style.fontSize = campoTamanho.value + 'px' ; 
+            });
+
+            btnAlterarTela.addEventListener('click',function(){
+            document.body.style.backgroundColor = campoTela.value ; 
+            });
+            
+            btnAlterarCor.addEventListener('click',function(){
+            lorens.style.color = campoCor.value ; 
+            });
+    </script>
+</body>
+</html> 
