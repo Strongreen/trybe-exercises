@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="paiDoPai">
+        <div id="pai">
+          <div id="primeiroFilho">teste</div>
+          <div id="elementoOndeVoceEsta">
+            <div id="primeiroFilhoDoFilho"></div>
+            <div id="segundoEUltimoFilhoDoFilho"></div>
+          </div>
+          Atenção!
+          <div id="terceiroFilho"></div>
+          <div id="quartoEUltimoFilho"></div>
+        </div>
+      </div>
+      <script>
+          let removePrimeiroFilho = document.querySelector("#primeiroFilho");
+
+            removePrimeiroFilho.remove();
+
+
+            let removeTerceiroFilho = document.querySelector("#terceiroFilho");
+
+            removeTerceiroFilho.remove();
+
+
+            let removequartoEFilho = document.querySelector("#quartoEUltimoFilho");
+
+            removequartoEFilho.remove();
+
+
+            let removeTexto = document.querySelector("#elementoOndeVoceEsta").nextSibling;
+
+            removeTexto.remove();
+
+
+
+            let removeUltimoFilhodoFilho = document.querySelector("#elementoOndeVoceEsta");
+
+            let removeUltimoFilhoFilho = document.querySelector("#segundoEUltimoFilhoDoFilho");
+            removeUltimoFilhodoFilho.removeChild(removeUltimoFilhoFilho);
+
+            
+            let contentPaiDoPai = document.querySelector("#pai");
+
+
+            contentPaiDoPai.parentNode.remove();
+            
+            let novoPai = document.createElement('div');
+
+            novoPai.className = "pai";
+
+            novoPai.innerHTML = contentPaiDoPai.innerHTML;
+
+            document.body.appendChild(novoPai);
+
+            
+
+           
+
+            
+      </script>
+</body>
+</html>
