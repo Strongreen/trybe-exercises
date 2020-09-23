@@ -1,0 +1,36 @@
+<! DOCTYPE html>
+<html>
+ <head>
+  <meta charset = "utf-8" />
+  <title> Cat Walk </title>
+ </head>
+ <body>
+  
+  <img class='imagem' style = "posição: absoluta;" src = "http://www.anniemation.com/clip_art/images/cat-walk.gif">
+  
+  <script>
+      let imagem = document.querySelector('.imagem');
+      
+      leftImg();
+
+      function leftImg(){
+        imagem.style.left = '0px';
+      };
+
+    
+
+        function catWalk(){
+            let andando = 100;
+            imagem.style.right +=  andando;
+            console.log(window.innerWidth);
+        }
+
+        imagem.addEventListener('click',catWalk);
+
+    //   let tempo;
+
+
+    //     let tempo = window.setTimeout(catWalk,50);
+  </script>
+ </body>
+</html>
