@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <form action="">
         <fieldset>
@@ -20,11 +22,11 @@
             </div>
             <div>
                 <label>CPF: </label>
-                <input name="CPF" type="text" max="11" required="required" placeholder="Insira seu CPF" >
+                <input name="CPF" type="text" max="11" required="required" placeholder="Insira seu CPF">
             </div>
             <div>
                 <label>Endereço: </label>
-                <input name="endereco" type="text" max="200" required="required" placeholder="Insira sua Rua, número e Bairro" >
+                <input name="endereco" type="text" max="200" required="required" placeholder="Insira sua Rua, número e Bairro">
             </div>
             <div>
                 <label>Cidade: </label>
@@ -32,17 +34,39 @@
             </div>
             <div>
                 <label>Estado: </label>
-                <select name="estado" id="estado" >
+                <select name="estado" id="estado">
                     <option  selected="selected" value="1">Selecione</option>
                 </select>
             </div>
             <div>
                 <label>Casa ou Apartamento:  </label> <br>
-               <label for="casa"> Casa <input id="casa" name="casa-apartamento" value="casa" type="radio" required="required" ></label><br>
-               <label for="apartamento">Apartamento<input id="apartamento" name="casa-apartamento" value="apartamento" type="radio" required="required" ></label> 
+                <label for="casa"> Casa <input id="casa" name="casa-apartamento" value="casa" type="radio" required="required" ></label><br>
+                <label for="apartamento">Apartamento<input id="apartamento" name="casa-apartamento" value="apartamento" type="radio" required="required" ></label>
             </div>
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <label for="resumo">Resumo do seu currículo</label> <br>
+                <textarea name="resumo" id="resumo" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+                <label for="">Cargo: </label>
+                <input type="text" max="40" required="required">
+            </div>
+            <div>
+                <label for="">Descrição do cargo: </label>
+                <input type="text" max="500" required="required">
+            </div>
+            <div>
+                <label for="">Data de inicio: </label>
+                <input type="date" required="required">
+            </div>
+
         </fieldset>
     </form>
     <script src="script.js"></script>
 </body>
+
 </html>
