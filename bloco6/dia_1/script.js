@@ -1,52 +1,43 @@
-
-let estados = {
-    Acre: "AC",
-    Alagoas: "AL",
-    Amapa: "AP",
-    Amazonas: "AM",
-    Bahia: "BA",
-    Ceara: "CE",
-    DistritoFederal: "DF",
-    EspiritoSanto: "ES",
-    Goias: "GO",
-    Maranhao: "MA",
-    MatoGrosso: "MT",
-    MatoGrossodoSul: "MS",
-    MinasGerais: "MG",
-    Para: "PA",
-    Paraiba: "PB",
-    Parana: "PR",
-    Pernambuco: "PE",
-    Piaui: "PI",
-    RiodeJaneiro: "RJ",
-    RioGrandedoNorte: "RN",
-    RioGrandedoSul: "RS",
-    Rondonia: "RO",
-    Roraima: "RR",
-    SantaCatarina: "SC",
-    SaoPaulo: "SP",
-    Sergipe: "SE",
-    Tocantins: "TO"
-}
+let estados = [
+    "Acre",
+    "Alagoas",
+    "Amapa",
+    "Amazonas",
+    "Bahia",
+    "Ceara",
+    "Distrito Federal",
+    "Espirito Santo",
+    "Goias",
+    "Maranhao",
+    "Mato Grosso",
+    "Mato Grosso do Sul",
+    "MinasGerais",
+    "Para",
+    "Paraiba",
+    "Parana",
+    "Pernambuco",
+    "Piaui",
+    "RiodeJaneiro",
+    "Rio Grande do Norte",
+    "Rio Grande do Sul",
+    "Rondonia",
+    "Roraima",
+    "Santa Catarina",
+    "São Paulo",
+    "Sergipe",
+    "Tocantins"
+]
 
 let estado = document.querySelector('#estado');
 let seleciona = [];
 
-function selectEstado(){
+function selectEstado() {
+    for (let index = 0; index < estados.length; index++) {
 
-    seleciona = document.createElement('option');
-
-    seleciona.text = estados[0];
-    seleciona.value = estados[0];
-
-    console.log(estados.['Acre']);
-    estado.appendChild(seleciona);
-
-    for(let index = 0 ; index <= estados.length; index++){
-
-        seleciona[index].document.createElement('option');
+        seleciona[index] = document.createElement('option');
+        seleciona[index].value = estados[index];
         seleciona[index].text = estados[index];
-        seleciona[index].value = [index];
+        console.log(seleciona[index]);
         estado.append(seleciona[index]);
     }
 
@@ -54,12 +45,3 @@ function selectEstado(){
 
 
 selectEstado();
-
-
-
-
-
-
-
-
-
