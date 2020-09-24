@@ -11,13 +11,13 @@ let estados = [
     "Maranhao",
     "Mato Grosso",
     "Mato Grosso do Sul",
-    "MinasGerais",
+    "Minas Gerais",
     "Para",
     "Paraiba",
     "Parana",
     "Pernambuco",
     "Piaui",
-    "RiodeJaneiro",
+    "Rio de Janeiro",
     "Rio Grande do Norte",
     "Rio Grande do Sul",
     "Rondonia",
@@ -33,11 +33,9 @@ let seleciona = [];
 
 function selectEstado() {
     for (let index = 0; index < estados.length; index++) {
-
         seleciona[index] = document.createElement('option');
         seleciona[index].value = estados[index];
         seleciona[index].text = estados[index];
-        console.log(seleciona[index]);
         estado.append(seleciona[index]);
     }
 
