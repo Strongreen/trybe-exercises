@@ -12,7 +12,7 @@ const greet = (temperature) => console.log(`Hi there! Curiosity here. Right now 
 // definição da função sendMarsTemperature...
 
 const sendMarsTemperature = callback => {
-  const fahrenheit= toFahrenheit(getMarsTemperature(callback => callback))
+  const fahrenheit = toFahrenheit(getMarsTemperature(callback => callback))
   return callback(fahrenheit);
 };
 
