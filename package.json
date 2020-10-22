@@ -1,0 +1,26 @@
+{
+  "name": "trybe-exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "prompt": "^1.0.0",
+    "save": "^2.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Strongreen/trybe-exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Strongreen/trybe-exercises/issues"
+  },
+  "homepage": "https://github.com/Strongreen/trybe-exercises#readme"
+}
